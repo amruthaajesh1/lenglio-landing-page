@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenglio - Start Speaking English Today</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-color: #6C63FF; /* The color from your Flutter project */
+            --secondary-color: #1a1a2e;
+            --light-color: #f5f7fa;
+            --text-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header/Hero Section --- */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Diagonal bottom edge */
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        /* Download Button */
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #eee;
+            transform: translateY(-2px);
+        }
+
+        /* --- Features Section --- */
+        .features {
+            padding: 60px 0;
+            background-color: white;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 30px;
+            color: var(--secondary-color);
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .feature-item {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: var(--light-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s;
+        }
+        
+        .feature-item:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item i {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* --- Call to Action Footer --- */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        
+        footer h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+        
+        /* Media Query for Mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .features h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Lenglio</div>
+            <h1>The Fastest Way to Speak Fluent English.</h1>
+            <p>Connect instantly with native-level speakers and AI for real-time, zero-pressure conversation practice.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.lenglio.app" class="cta-button" target="_blank">
+                <i class="fab fa-google-play"></i> Get the App on Play Store
+            </a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Lenglio is Different</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Instant Connect</h3>
+                    <p>No scheduling. No searching. Tap "Start Speaking" and you're connected to a practice partner immediately.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Practice</h3>
+                    <p>Practice 24/7 with our advanced conversational AI tutor that provides instant feedback and scenario training.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Zero Pressure</h3>
+                    <p>Learn in a safe, judgment-free zone. The focus is purely on improving your real-world speaking confidence.</p>
+                </div>
+
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Native-Level Partners</h3>
+                    <p>Engage in calls with partners who are verified to offer high-quality, authentic English conversation.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Ready to find your voice?</h2>
+            <p>Download Lenglio now and join a community of confident English speakers.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.lenglio.app" class="cta-button">
+                <i class="fas fa-download"></i> Download Lenglio
+            </a>
+            
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="mailto:support@lenglio.org">Contact Us</a>
+            </div>
+            <p class="copyright">&copy; 2025 Lenglio. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
